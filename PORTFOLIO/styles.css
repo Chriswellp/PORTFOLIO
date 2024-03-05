@@ -1,0 +1,232 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    background-color: darkslategray;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #aaa;
+  }
+  
+  /* Hero Section Styles */
+  #hero {
+    background-image: url('background/code4.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color:whitesmoke;
+  }
+  
+  .hero-description {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color:whitesmoke;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* About Section Styles */
+  #about {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Skills Section Styles */
+  #skills {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill i {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio Section Styles */
+  #portfolio {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .project {
+    position: relative;
+  }
+  
+  .project img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .project-details h3,
+  .project-details p {
+    color: #fff;
+  }
+  
+  .project-details a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .project:hover .project-details {
+    opacity: 1;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
