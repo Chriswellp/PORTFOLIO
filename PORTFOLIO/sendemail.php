@@ -41,7 +41,7 @@ require 'PHPMailer/src/SMTP.php';
         echo "
         <script>
             alert('Sent Successfully');
-            document.location.href = 'Chriswell.php';
+            document.location.href = 'Index.php';
         </script>
         ";
     } catch (Exception $e) {
